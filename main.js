@@ -3,10 +3,12 @@ let coin = {
     flip: function() {
         /* 1. Randomly set your coin object's "state" property to be either 
            0 or 1: use "this.state" to access the "state" property on this object.*/
+           return this.state = Math.floor(Math.random() * 1)
     },
     toString: function() {
         /* 2. Return the string "Heads" or "Tails", depending on whether
            "this.state" is 0 or 1. */
+           return this.state === 0 ? "Head" : "Tails"
     },
     toHTML: function() {
         let image = document.createElement('img');
